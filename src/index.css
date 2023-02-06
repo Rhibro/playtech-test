@@ -40,7 +40,6 @@ body {
 }
 
 .boxPink {
-  background-color:  #FFA996;
   width: 70rem;
   height: 8rem;
   margin: .5rem;
@@ -53,12 +52,16 @@ body {
   color: #FFFFFF;
 }
 
-.boxBlue {
-  background-color: #A3F5D8;
-  width: 60rem;
-  height: 8rem;
-  margin: .5rem;
-  margin-left: 2rem;
+.boxPink:nth-of-type(odd) {
+  background-color:  #FFA996;
+}
+
+.boxPink:nth-of-type(even) {
+  background-color:  #A3F5D8;
+}
+
+p::first-line {
+  text-transform: lowercase;
 }
 
 @media screen and (max-width: 1310px) {

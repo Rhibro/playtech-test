@@ -14,17 +14,19 @@ function App() {
     </header>
     <>
         <div className="sideBar"></div>
-            <div className="containerBox">
+        <div className="containerBox">
               { Data && Data.map (data => {
                 return (
                   <div className="boxPink" key={ data.id }>
+                    
                     {
                       data.testData && data.testData.map( data => {
                         return (
-                         <div key={ data.id }> { data.sportName } </div>
+                         <div key={ data.id }> { data.sportName } { data.marketId }</div>
                         )
                       })
                     }
+                    
                   </div>
                 )
               })
@@ -37,3 +39,5 @@ function App() {
 }
 
 export default App;
+
+
