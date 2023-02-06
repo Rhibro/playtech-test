@@ -1,7 +1,4 @@
 import "./index";
-//import Header from "../src/components/Header";
-//import Home from "../src/components/Home";
-//import { BrowserRouter, Routes, Route } from "react-router-dom";
 import melon from "../src/images/blueseeds.svg";
 import Data from "../src/testData.json";
 
@@ -22,11 +19,10 @@ function App() {
                     {
                       data.testData && data.testData.map( data => {
                         return (
-                         <div key={ data.id }> { data.sportName } { data.marketId }</div>
+                         <div key={ data.id }> { data.sport.sportName } { data.market.marketId }</div>
                         )
                       })
                     }
-                    
                   </div>
                 )
               })

@@ -44,10 +44,14 @@ body {
   height: 8rem;
   margin: .5rem;
   margin-right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 5vw;
   line-height: 61px;
   color: #FFFFFF;
 }
