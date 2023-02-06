@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index";
+//import Header from "../src/components/Header";
+//import Home from "../src/components/Home";
+//import { BrowserRouter, Routes, Route } from "react-router-dom";
+import melon from "../src/images/blueseeds.svg";
+import Data from "../src/testData.json";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <header className="head">
+        <img src={melon} alt="a slice of watermelon with blue seeds" className="melonSeed"></img>
+    </header>
+    <>
+        <div className="sideBar"></div>
+            <div className="containerBox">
+              { Data && Data.map (data => {
+                return (
+                  <div className="boxPink" key={ data.id }>
+                    {
+                      data.testData && data.testData.map( data => {
+                        return (
+                         <div> { data.sportName } </div>
+                        )
+                      })
+                    }
+                  </div>
+                )
+              })
+            
+              }
+            </div>
+    </>
     </div>
   );
 }
