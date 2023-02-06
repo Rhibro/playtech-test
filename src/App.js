@@ -21,7 +21,7 @@ function App() {
                     {
                       data.testData && data.testData.map( data => {
                         return (
-                         <div> { data.sportName } </div>
+                         <div key={ data.id }> { data.sportName } </div>
                         )
                       })
                     }
