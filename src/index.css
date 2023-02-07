@@ -45,7 +45,7 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 35px;
   line-height: 50px;
   color: #FFFFFF;
 }
@@ -90,6 +90,7 @@ div::first-line {
   .boxPink {
     width: 50rem;
     margin-right: 0;
+    font-size: 27px;
   }
   
 }
@@ -98,6 +99,7 @@ div::first-line {
 
   .boxPink {
     width: 40rem;
+    font-size: 22px;
   }
   
 }
@@ -107,6 +109,7 @@ div::first-line {
   .boxPink {
     width: 30rem;
     height: 6rem;
+    font-size: 18px;
   }
   
 }
@@ -116,6 +119,7 @@ div::first-line {
   .boxPink {
     width: 25rem;
     height: 5rem;
+    font-size: 15px;
   }
   
 }
@@ -135,6 +139,7 @@ div::first-line {
   .boxPink {
     width: 20rem;
     height: 5rem;
+    font-size: 12px;
   }
   
 }
