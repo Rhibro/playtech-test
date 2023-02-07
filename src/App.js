@@ -4,14 +4,6 @@ import Data from "../src/testData.json";
 
 
 function App() {
-  function compareFn(a, b) {
-    if (a.marketId < b.marketId) {
-      return -1;
-    }
-    if (a.marketId > b.marketId) {
-      return 1;
-    }
-  }
  
   return (
     <div>
@@ -23,15 +15,12 @@ function App() {
         
         <div className="containerBox">
               { Data && Data
-              
+              .sort( (a,b) => a.id < b.id ? 1 : -1)
               .map (data => {
                 return (
-                  
                   <div className="boxPink" key={ data.id }>
-                    
                     {
                       data.testData && data.testData 
-                      
                       .map( data => {
                         return (
                         <div key={ data.id }> 
@@ -42,11 +31,9 @@ function App() {
                         )
                       })
                     }
-                    
                   </div>
                 )
               })
-            
               }
         </div>
     </>
@@ -56,18 +43,3 @@ function App() {
 
 export default App;
 
-
-/*
-data.sort((a, b) => {
-  if (a.market.marketId < b.market.marketId)
-  { return -1 ;}
-});
-
-toSort(a, b) {
-    if (a.market.marketId < b.market.marketId)
-    { return -1 ;}
-  };
-
-  .sort((a, b) => a.marketId > b.marketId ? 1 : -1)
-
-*/

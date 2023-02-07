@@ -2,11 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .head {
@@ -26,7 +21,6 @@ body {
   width: 8rem;
   min-height: 100%;
   height: auto;
-  margin-bottom: -500px; 
   padding-bottom: 500px;
 }
 
@@ -82,9 +76,11 @@ div::first-line {
     display: none;
   }
 
+
   .containerBox {
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
   }
 
 }
@@ -126,6 +122,16 @@ div::first-line {
 
 @media screen and (max-width: 420px) {
 
+  .head {
+    min-height: 50px;
+    height: 100%;
+  }
+
+  .melonSeed {
+    width: 50px;
+    height: 50px;
+  }
+
   .boxPink {
     width: 20rem;
     height: 5rem;
@@ -133,10 +139,3 @@ div::first-line {
   
 }
 
-
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
