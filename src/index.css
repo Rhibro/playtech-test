@@ -5,7 +5,7 @@ body {
 }
 
 .head {
-  background-color: #B3B2FE;
+  background-color: #B2BDFF;
   width: 100%;
   min-height: 102px;
   height: 100%;
@@ -16,7 +16,7 @@ body {
 }
 
 .sideBar {
-  background-color: #F2B5F3;
+  background-color: #F5B2FF;
   position: absolute;
   width: 8rem;
   min-height: 100%;
@@ -51,11 +51,12 @@ body {
 }
 
 .boxPink:nth-of-type(odd) {
-  background-color:  #FFA996;
+  background-color:  #FFB2B2;
 }
 
 .boxPink:nth-of-type(even) {
-  background-color:  #A3F5D8;
+  background-color:  #b2fff1;
+  color: #c9c2c2;
 }
 
 div::first-line {
