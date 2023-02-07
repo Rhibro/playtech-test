@@ -14,14 +14,15 @@ function App() {
         
         <div className="containerBox">
               { Data && Data
-              .sort((a, b) => a.marketId > b.marketId ? 1 : -1)
               .map (data => {
                 return (
 
                   <div className="boxPink" key={ data.id }>
                     
                     {
-                      data.testData && data.testData.map( data => {
+                      data.testData && data.testData 
+                      
+                      .map( data => {
                         return (
                         <div key={ data.id }> 
                           { data.sport.sportName } || 
@@ -51,4 +52,12 @@ data.sort((a, b) => {
   if (a.market.marketId < b.market.marketId)
   { return -1 ;}
 });
+
+toSort(a, b) {
+    if (a.market.marketId < b.market.marketId)
+    { return -1 ;}
+  };
+
+  .sort((a, b) => a.marketId > b.marketId ? 1 : -1)
+
 */
