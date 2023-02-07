@@ -4,10 +4,6 @@ import Data from "../src/testData.json";
 
 
 function App() {
-
-  let parsedMarkId =  Data.map((data, index) => {
-    return parseInt(Object.values(data.testData[0].market))
-   })
  
   return (
     <div>
@@ -16,11 +12,11 @@ function App() {
       </header>
     <>
         <div className="sideBar"></div>
-<div className="box">  
-        {parsedMarkId && parsedMarkId.sort ( (a,b) => a.id < b.id ? 1 : -1 )}
+          
+        
         <div className="containerBox">
               { Data && Data
-             
+              .sort( (a,b) => a.id < b.id ? 1 : -1)
               .map (data => {
                 return (
                   <div className="boxPink" key={ data.id }>
@@ -40,7 +36,7 @@ function App() {
                 )
               })
               }
-        </div>
+        
         </div>
     </>
     </div>
@@ -55,8 +51,12 @@ data.sort((a, b) => {
   {return -1;}
 });
 
+ .sort( (a,b) => a.id < b.id ? 1 : -1)
+
 let parsedMarkId =  Data.map((data, index) => {
    return parseInt(Object.values(data.testData[0].market))
   })
+
+{parsedMarketId.sort && parsedMarketId.sort ( (a,b) => a.parsedMarketId < b.parsedMarketId ? 1 : -1 )}
 
 */
