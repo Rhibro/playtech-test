@@ -4,6 +4,15 @@ import Data from "../src/testData.json";
 
 
 function App() {
+  function compareFn(a, b) {
+    if (a.marketId < b.marketId) {
+      return -1;
+    }
+    if (a.marketId > b.marketId) {
+      return 1;
+    }
+  }
+ 
   return (
     <div>
       <header className="head">
@@ -14,9 +23,10 @@ function App() {
         
         <div className="containerBox">
               { Data && Data
+              
               .map (data => {
                 return (
-
+                  
                   <div className="boxPink" key={ data.id }>
                     
                     {
