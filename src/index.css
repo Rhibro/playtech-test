@@ -51,8 +51,8 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 5vw;
-  line-height: 61px;
+  font-size: 3vw;
+  line-height: 50px;
   color: #FFFFFF;
 }
 
@@ -64,7 +64,7 @@ body {
   background-color:  #A3F5D8;
 }
 
-p::first-line {
+div::first-line {
   text-transform: lowercase;
 }
 
